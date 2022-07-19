@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[Bài tập] Sử dụng các hàm có sẵn của mảng - exe02</title>
+</head>
+<body>
+    <script>
+       let num = prompt('Nhập số: ')
+        let result = [num[0]]
+        
+        for(let x = 1; x < num.length; x++)
+        {
+            if((num[x-1]%2 === 0)&&(num[x]%2 === 0))
+            {
+            result.push('-', num[x])
+            }
+            else
+            {
+            result.push(num[x])
+            }
+        }
+        console.log(result.join(''))
+    </script>
+</body>
+</html>
